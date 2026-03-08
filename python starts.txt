@@ -1,0 +1,108 @@
+python Notes
+
+
+
+python starts:
+Basics:
+Variable::::
+1)A variable acts like a container for data
+Example:
+x = 10
+name = "Ravi"
+price = 99.5
+print(x)
+print(name)
+2)Works:
+--->In Python you do not need to declare the type of a variable.
+--->Python automatically determines the data type. This feature is called dynamic typing.
+3)Rules for Naming Variables----->age = 20
+                                **student\_name = "Anil"**
+
+                                **totalMarks = 95 (this are correct indicates)**
+
+|
+|(This arew not allowed)
+2name = "Ravi"     # cannot start with number
+student-name = 10  # hyphen not allowed
+class = 5          # reserved keyword
+4)Multiple Variables at Once:a, b, c = 1, 2, 3
+                           **print(a, b, c)**
+
+5)5. Reassigning Variables
+score = 50
+score = 80
+print(score)
+
+
+✅ Simple definition:
+A variable in Python is a name that stores a value in memory so it can be used later in a program.
+
+Types of Variables in Python:
+1. Local Variable
+
+A local variable is created inside a function and can only be used inside that function.
+
+Example:
+
+def show():
+    **x = 10   # local variable**
+
+    **print(x)**
+
+
+
+
+show()
+2. Global Variable
+
+A global variable is created outside all functions and can be used anywhere in the program.
+
+Example:
+
+x = 20   # global variable
+
+def show():
+    **print(x)**
+show()
+3. Instance Variable
+
+Used in classes and belongs to objects.
+
+Example:
+
+class Student:
+    **def \_\_init\_\_(self, name):**
+        **self.name = name   # instance variable**
+s1 = Student("Ravi")
+print(s1.name)
+
+Each object has its own copy of the variable.
+4. Class Variable
+
+A class variable is shared by all objects of the class.
+
+Example:
+
+class Student:
+    **school = "ABC School"   # class variable**
+
+
+
+
+s1 = Student()
+s2 = Student()
+
+print(s1.school)
+print(s2.school)
+
+Both objects access the same variable.
+
+| Data Type  | Example               | Description          |
+| ---------- | --------------------- | -------------------- |
+| Integer    | `x = 10`              | Whole numbers        |
+| Float      | `price = 9.5`         | Decimal numbers      |
+| String     | `name = "Ravi"`       | Text                 |
+| Boolean    | `is\\\_pass = True`      | True or False        |
+| List       | `numbers = \\\[1,2,3]`   | Collection of items  |
+| Tuple      | `t = (1,2,3)`         | Immutable collection |
+| Dictionary | `d = {"name":"Ravi"}` | Key-value pairs      |
